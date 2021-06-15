@@ -115,6 +115,9 @@ thead {
    font-family: var(--afont);
    color: white;
 }
+table{
+   direction: ltr;
+}
 
 .grid-test {
 
