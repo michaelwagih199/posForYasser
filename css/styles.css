@@ -1,0 +1,179 @@
+/* ===============================
+   Author: Brad Hussey
+   Date:   September 22, 2013
+   
+   Notes:
+   Hand coded for Build a Website
+   from Scratch with HTML & CSS
+   
+   Colour Palette:
+   ---------------
+   Light Cream:		#f2f3ee
+   Orange:			#d17f38
+   Yellow:			#e8c04f
+   Brown:			#4b2707
+   =============================== */
+
+
+/* General */
+
+:root {
+   --main: #154b5a;
+   --accent: #D3E0E9;
+   --accent2: #1687A7;
+   --Brown2: #441f0b;
+   --orgwany2: #986FAC;
+   --back2: #D8CBBB;
+   --offWhite: #F5F5F5;
+   --afont: 'Almarai';
+}
+
+
+
+/* arabic */
+@font-face {
+   font-family: 'Almarai';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Almarai'), local('Almarai'), url('../assets/fonts/almarai-v5-arabic/almarai-v5-arabic-regular.woff') format('woff');
+}
+
+
+body {
+   background: #4b2707 url('../assets/images/bg-tile.gif') top left repeat;
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizelegibility;
+   font-size: 14px;
+   font-family: 'Almarai', sans-serif;
+}
+
+.flex-container {
+   display: flex;
+   justify-content: space-between;
+   background-color: var(--main);
+   padding: 10px;
+}
+
+.flex-item {
+   margin-left: 3%;
+   margin-right: 3%;
+}
+
+.flex-container-strich {
+   margin-top: 0.5%;
+   display: flex;
+   justify-content: space-between;
+   align-items: stretch;
+   height: fit-content;
+   margin-left: 1%;
+   margin-right: 1%;
+}
+
+.flex-product-search {
+   height: 90vh;
+   background-color: var(--offWhite);
+   flex: 2;
+   margin: 5px;
+   padding: 3px;
+   border-radius: 5px;
+   border: 2px solid var(--accent);
+}
+
+.flex-product-details {
+   height: 90vh;
+   background-color: var(--offWhite);
+   flex: 3;
+   margin: 5px;
+   border-radius: 5px;
+   border: 2px solid var(--accent);
+}
+
+.c-font {
+   font-family: 'Almarai';
+}
+
+.iconBtn {
+   background-color: bisque;
+}
+
+.customerDiv {
+   display: flex;
+   background-color: var(--accent);
+   border-radius: 10px;
+   border: 1px solid var(--accent2);
+   align-items: center;
+  justify-content: space-around;
+}
+
+.scro {
+   height: 400px;
+   overflow: auto;
+}
+
+thead {
+   text-align: center;
+   background-color: var(--accent2);
+   font-family: var(--afont);
+   color: white;
+}
+
+.grid-test {
+   background-color: var(--accent);
+   border-radius: 10px;
+   border: 1px solid var(--accent2);
+   padding: 10px;
+   margin-left: 2vh;
+   margin-right: 2vh;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 10px;
+}
+
+.grid-withflex {
+   border-radius: 10px;
+   padding: 5px;
+   margin-left: 2vh;
+   margin-right: 2vh;
+   margin-top: 10px;
+   display: grid;
+   gap: 5px;
+   grid-template-columns: 1fr 1fr 1fr 2fr;
+
+}
+
+.div-details {
+   background-color: var(--accent2);
+   font-size: large;
+   text-align: center;
+   color: white;
+   border-radius: 5px;
+}
+
+.xlargeFont {
+   font-size: xx-large;
+}
+
+.c-flex {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 10px;
+   padding: 5px;
+}
+
+.divbtn {
+   display: flex;
+   justify-content: center;
+}
+
+button.mbtn {
+   padding: 0.6em 2em;
+   border-radius: 50px;
+   color: #fff;
+   background-color: var(--accent2);
+   font-family: var(--afont);
+   font-size: large;
+   border: 0;
+   cursor: pointer;
+   margin: 1em;
+}
