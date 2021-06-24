@@ -61,13 +61,12 @@ body {
 }
 
 .icon-cyn {
-    width: 100px;
-    height: 80px;
     border-radius: 10px;
     font-size: 4em;
     color: var(--veryLightGray);
-    margin: 10px;
-    background-color: var(--cyan)
+    background-color: var(--cyan);
+    padding: 10px;
+    height: 100%;
 }
 
 
