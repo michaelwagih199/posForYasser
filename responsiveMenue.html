@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Side Menu</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <!-- <div class="flex-container" style="direction: ltr;">
+        <div class="flex-item">
+            <h3 id="dateToday" class="c-font">
+            </h3>
+        </div>
+        <div class="flex-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </div>
+    </div> -->
+
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </a>
+        </span>
+
+        <!-- <ul class="navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul> -->
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <div class="user-area">
+            <a><i class='fas fa-user-circle' style='font-size:30px'></i> Admin</a>
+        </div>
+        <hr>
+        <a href="#home"><i class="fa fa-fw fa-home"></i>الرئيسية</a>
+        <a href="#home"><i class="fas fa-shopping-cart"></i>
+            شاشة البيع</a>
+        <a href="#home"><i class="fa fa-fw fa-home"></i>عروض اسعار</a>
+        <a href="#home"><i class="fa fa-fw fa-home"></i>الرئيسية</a>
+
+    </div>
+
+    <div id="main">
+        <div class="flex1">
+            <div class="item">
+                <div class="flex-container">
+                    <div class="icon-cyn">
+                        <i class="fas fa-chart-pie" style="position:relative; right: 20%; top: 10%;"></i>
+                    </div>
+                    <div class="flex-column">
+                        <p> عدد العملاء</p>
+                        <p> 2555 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="flex-container">
+                    <div class="icon-cyn">
+                        <i class="fas fa-hand-holding-usd" style="position:relative; right: 20%; top: 10%;"></i>
+                    </div>
+                    <div class="flex-column">
+                        <p> عدد العملاء</p>
+                        <p> 2555 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="flex-container">
+                    <div class="icon-cyn">
+                        <i class="fas fa-chart-bar" style="position:relative; right: 20%; top: 10%;"></i>
+                    </div>
+                    <div class="flex-column">
+                        <p> عدد العملاء</p>
+                        <p> 2555 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="flex-container">
+                    <div class="icon-cyn">
+                        <i class="fas fa-address-card" style="position:relative; right: 20%; top: 10%;"></i>
+                    </div>
+                    <div class="flex-column">
+                        <p> عدد العملاء</p>
+                        <p> 2555 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cards -->
+        <div class="card-container">
+            <div class="card-cyan">
+                <p class="fontHeader">
+                    اجمالى المبيعات
+                </p>
+                <h2> 2555 </h2>
+            </div>
+            <div class="card-blue">
+                <p class="fontHeader">
+                    اجمالى المبيعات
+                </p>
+                <h2> 2555 </h2>
+            </div>
+            <div class="card-orange">
+                <p class="fontHeader">
+                    اجمالى المبيعات
+                </p>
+                <h2> 2555 </h2>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card-cyan">
+                <p class="fontHeader">
+                    اجمالى المبيعات
+                </p>
+                <h2> 2555 </h2>
+            </div>
+            <div class="card-blue">
+                <p class="fontHeader">
+                    اجمالى المبيعات
+                </p>
+                <h2> 2555 </h2>
+            </div>
+            <div class="card-orange">
+                <p class="fontHeader">
+                    اجمالى المبيعات
+                </p>
+                <h2> 2555 </h2>
+            </div>
+        </div>
+
+        <script src="css/js/nav.js"></script>
+</body>
+
+</html>

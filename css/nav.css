@@ -1,0 +1,241 @@
+:root {
+    --main: #154b5a;
+    --accent: #D3E0E9;
+    --accent2: #1687A7;
+    --Brown2: #441f0b;
+    --orgwany2: #986FAC;
+    --back2: #D8CBBB;
+
+    --offWhite: #F5F5F5;
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --afont: 'Almarai';
+}
+
+/* arabic */
+@font-face {
+    font-family: 'Almarai';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Almarai'), local('Almarai'), url('../assets/fonts/almarai-v5-arabic/almarai-v5-arabic-regular.woff') format('woff');
+}
+
+
+body {
+    background: #4b2707 url('../assets/images/bg-tile.gif') top left repeat;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    font-size: 14px;
+    font-family: 'Almarai', sans-serif;
+    overflow-x: hidden;
+    direction: rtl
+}
+
+.flex1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.item {
+    background-color: var(--accent);
+    border-radius: 10px;
+    border: 1px solid var(--accent2);
+    flex: auto;
+    margin: 10px 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.icon-cyn {
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 4em;
+    color: var(--veryLightGray);
+    margin: 10px;
+    background-color: var(--cyan)
+}
+
+
+.flex-column {
+    display: flex;
+    height: 80px;
+    flex-direction: column;
+    font-size: large;
+    margin-left: 20%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.c-font {
+    font-family: 'Almarai';
+}
+
+
+.navbar {
+    background-color: var(--main);
+    overflow: hidden;
+    height: 63px;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+
+.navbar a:hover {
+    background-color: var(--accent2);
+    color: #000;
+}
+
+.side-nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--accent2);
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    background-color: var(--main);
+}
+
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-right 0.5s;
+    width: 100%;
+    margin-right: 210px;
+    margin-top: 10px;
+}
+
+.user-area {
+    background-color: var(--main);
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 5vh;
+}
+
+
+.card-blue {
+    flex: auto;
+    background-color: var(--veryLightGray);
+    padding: 2%;
+    border-top: 3px solid var(--blue) !important;
+    border-radius: 10px;
+    height: 100px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px;
+}
+.fontHeader{
+    border-bottom: 3px solid var(--cyan) !important;
+    padding-bottom: 5px;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+.card-red {
+    flex: auto;
+    background-color: var(--veryLightGray);
+    padding: 2%;
+    border-top: 3px solid var(--red) ;
+    border-radius: 10px;
+    height: 100px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px;
+}
+
+.card-cyan {
+    flex: auto;
+    background-color: var(--veryLightGray);
+    padding: 2%;
+    border-top: 3px solid var(--cyan) ;
+    border-radius: 10px;
+    height: 100px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px;
+}
+
+.card-orange {
+    flex: auto;
+    background-color: var(--veryLightGray);
+    padding: 2%;
+    border-top: 3px solid var(--orange) ;
+    border-radius: 10px;
+    height: 100px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px;
+}
+
+
+
+
+@media(max-width:568px) {
+    .navbar-nav {
+        display: none;
+    }
+
+}
+
+@media(min-width:568px) {
+    /*.open-slide{display:none}*/
+}

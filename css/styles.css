@@ -24,6 +24,14 @@
    --back2: #D8CBBB;
    --offWhite: #F5F5F5;
    --afont: 'Almarai';
+
+   --red: hsl(0, 78%, 62%);
+   --cyan: hsl(180, 62%, 55%);
+   --orange: hsl(34, 97%, 64%);
+   --blue: hsl(212, 86%, 64%);
+   --varyDarkBlue: hsl(234, 12%, 34%);
+   --grayishBlue: hsl(229, 6%, 66%);
+   --veryLightGray: hsl(0, 0%, 98%);
 }
 
 
@@ -115,12 +123,12 @@ thead {
    font-family: var(--afont);
    color: white;
 }
+
 table{
    direction: ltr;
 }
 
 .grid-test {
-
    background-color: var(--accent);
    border-radius: 10px;
    border: 1px solid var(--accent2);
@@ -137,11 +145,11 @@ table{
    border: 1px solid var(--accent2);
    border-radius: 10px;
    padding: 5px;
-   margin-left: 2vh;
-   margin-right: 2vh;
+   margin-left: 3vh;
+   margin-right: 3vh;
    margin-top: 10px;
    display: grid;
-   gap: 5px;
+   gap: 10px;
    grid-template-columns: 1fr 1fr 1fr 2fr;
 
 }
@@ -167,6 +175,7 @@ table{
 }
 
 .divbtn {
+   direction: ltr;
    display: flex;
    justify-content: center;
 }
@@ -182,3 +191,5 @@ button.mbtn {
    cursor: pointer;
    margin: 3px;
 }
+
+
