@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>POS</title>
+    <!-- Normalize to clean up & standardize the browser default styles: http://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container mt-2 ">
+        <div class="addDiv">
+            <p class="diveHeader">اضافة المنتجات</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <input type="email" class="form-control c-font" placeholder="باركود" id="serial">
+                    </div>
+                    <div class="col">
+                        <select class="form-select c-font" aria-label="موظف مبيعات">
+                            <option selected>تصنيف رئيسي</option>
+                            <option value="1">حريمى</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input type="email" class="form-control c-font" placeholder="الوحده" id="serial">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <input type="email" class="form-control c-font" placeholder="باركود" id="serial">
+                    </div>
+                    <div class="col">
+                        <select class="form-select c-font" aria-label="موظف مبيعات">
+                            <option selected>تصنيف رئيسي</option>
+                            <option value="1">حريمى</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input type="email" class="form-control c-font" placeholder="الوحده" id="serial">
+                    </div>
+                </div>
+                <button class="addButton">أضافة</button>
+            </div>
+        </div>
+
+        <div class="addDiv mt-3">
+            <p class="diveHeader">عرض المنتجات</p>
+            <div class="container-fluid">
+                <div class="scro m-2 ">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>الاجمالى</th>
+                                <th>الوحدة</th>
+                                <th>الكمية</th>
+                                <th>السعر</th>
+                                <th>الصنف</th>
+                            </tr>
+                        </thead>
+                        <tbody class="c-font" style="text-align:center">
+                            <tr>
+                                <td>50</td>
+                                <td>5</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>بنطلون ليكرا اسود </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
