@@ -196,7 +196,7 @@ button.mbtn {
    background-color: var(--accent);
    border-radius: 10px;
    border: 1px solid var(--accent2);
-   height: 40VH;
+   height: 45VH;
    overflow: auto;
    font-family: 'Almarai', sans-serif;
    text-align: center;
